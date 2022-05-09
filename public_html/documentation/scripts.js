@@ -1,3 +1,11 @@
+//  <script src="scripts.js" defer></script>
+//  <div>
+//
+//         <span title="hello" id = "hi">Hello</span>
+//         <span id = "bye">Bye</span>
+//     </div>
+
+
 const body = document.body
 const div = document.querySelector('div')
 const spanHi =document.querySelector('#hi')
