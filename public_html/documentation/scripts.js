@@ -1,3 +1,7 @@
+
+
+
+
 //  <script src="scripts.js" defer></script>
 //  <div>
 //
@@ -6,12 +10,12 @@
 //     </div>
 
 
-const body = document.body
-const div = document.querySelector('div')
-const spanHi =document.querySelector('#hi')
-const spanBye =document.querySelector('#bye')
+//const body = document.body
+//const div = document.querySelector('div')
+//const spanHi =document.querySelector('#hi')
+//const spanBye =document.querySelector('#bye')
 
-console.log(spanHi.title)
+//console.log(spanHi.title)
 
 //div.removeChild(spanHi)
 
