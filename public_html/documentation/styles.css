@@ -10,14 +10,14 @@
     background-color: #dfdfdf;
 }
 .flexbox-item-1 {
-    min-height: 100px;
+    min-height: 90px;
     flex-grow: 2;
     flex-basis: 0;
     align-self: center;
 
 }
 .flexbox-item-2 {
-    min-height: 200px;
+    min-height: 180px;
     align-self: center;
 
 }

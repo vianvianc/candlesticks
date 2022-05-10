@@ -1,0 +1,26 @@
+{
+  "name": "candlesticks",
+  "version": "1.0.0",
+  "description": "This project is a home page for a candlestick evaluator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vianvianc/candlesticks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vianvianc/candlesticks/issues"
+  },
+  "homepage": "https://github.com/vianvianc/candlesticks#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
