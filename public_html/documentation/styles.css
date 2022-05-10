@@ -8,6 +8,7 @@
     margin: 10px;
     border: 3px solid #333;
     background-color: #dfdfdf;
+    border-radius: 5px;
 }
 .flexbox-item-1 {
     min-height: 90px;
@@ -16,38 +17,45 @@
     align-self: center;
     padding-left: 10px;
     font-family: sans-serif;
+    border-radius: 5px;
 
 }
 .flexbox-item-2 {
     min-height: 180px;
     align-self: center;
+    border-radius: 5px;
 
 }
 .flexbox-container-b {
     display: flex;
     justify-content: space-around;
+    border-radius: 5px;
 }
 .flexbox-item {
     width: 400px;
     margin: 10px;
     border: 3px solid #333;
     background-color: #dfdfdf;
+    border-radius: 5px;
 }
 .flexbox-item-1 {
     min-height: 100px;
     flex-grow: 2;
     flex-basis: 0;
     align-self: center;
+    border-radius: 5px;
 
 }
 .flexbox-item-2 {
     min-height: 200px;
     align-self: center;
     background-color: black;
+    border-radius: 5px;
 }
 .flexbox-container-c {
     display: flex;
     justify-content: space-around;
+    border-radius: 5px;
 }
 
 .flex-inner {
@@ -74,6 +82,7 @@ img {
     align-items: center;
     background-color: #333;
     color: white;
+    border-radius: 5px;
 }
 .brand-title {
     font-size: 1.5rem;
@@ -137,4 +146,17 @@ img {
     .navbar-links.active {
         display: flex;
     }
+}
+/*@media (max-width: 500px) {
+    .flexbox-item-1 {
+        flex-direction: column;
+    }
+}
+*/
+.logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
 }
