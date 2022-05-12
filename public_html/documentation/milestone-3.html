@@ -13,7 +13,7 @@
        <div class="brand-title">Candlestick Alerts</div>
         <a class="navbar-brand" href="/">
             <div class="logo-image">
-                <img src="images/warrior.png" class="img-fluid"/>
+                <img src="images/warrior.png" class="img-fluid" alt="warrior"/>
             </div>
         </a>
 
@@ -85,6 +85,38 @@
         <img src="images/flag.png" alt="flag"></img>
     </div>
     </div>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            padding: 15px;
+            background: #eee;
+            user-select: none;
+        }
+        [type=radio] {
+            display: none;
+        }
+        #slider{
+            height: 30vw;
+            position: relative;
+            perspecive: 800px;
+            transform-style: preserve-3d;
+        }
+        #slider label{
+            margin: auto;
+            width: 55%;
+            height: 100%;
+            border-radius: 4px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            cursor: pointer;
+            transition: transform 0.5s ease;
+
+        }
+    </style>
 <h1 style="text-align: center;font-family: 'JetBrains Mono';font-size: 40px;"> What We Offer</h1>
 <br></br>
 <section id="slider">
@@ -96,13 +128,13 @@
     <input type="radio" name="slider" id="s6">
 
 <label for="s1" id="slide1">
-    <img src="img1.png" height="100%" width="100%">
+    <img src="images/img1.png" height="100%" width="100%">
 </label>
     <label for="s2" id="slide2">
-        <img src="img1.png" height="100%" width="100%">
+        <img src="images/img2.png" height="100%" width="100%">
     </label>
     <label for="s3" id="slide3">
-        <img src="img1.png" height="100%" width="100%">
+        <img src="images/img3.png" height="100%" width="100%">
     </label>
     <label for="s4" id="slide4">
         <img src="img1.png" height="100%" width="100%">
