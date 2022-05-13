@@ -22,14 +22,14 @@
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-            <span class="bar"></span>
+
         </a>
         <div class="navbar-links">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Log In</a></li>
+
             </ul>
         </div>
     </nav>
@@ -86,71 +86,10 @@
         <img src="images/flag.png" alt="flag">
     </div>
 
-<style>
-    *
-
-    [type=radio] {
-        display: none;
-    }
-
-    #slider {
-        height: 35vw;
-        position: relative;
-        perspective: 1000px;
-        transform-style: preserve-3d;
-    }
-
-    #slider label {
-        margin: auto;
-        width: 60%;
-        height: 100%;
-        border-radius: 4px;
-        position: absolute;
-        left: 0; right: 0;
-        cursor: pointer;
-        transition: transform 0.4s ease;
-    }
-
-    #s1:checked ~ #slide4, #s2:checked ~ #slide5,
-    #s3:checked ~ #slide1, #s4:checked ~ #slide2,
-    #s5:checked ~ #slide3 {
-        box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-        transform: translate3d(-30%,0,-200px);
-    }
-
-    #s1:checked ~ #slide5, #s2:checked ~ #slide1,
-    #s3:checked ~ #slide2, #s4:checked ~ #slide3,
-    #s5:checked ~ #slide4 {
-        box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-        transform: translate3d(-15%,0,-100px);
-    }
-
-    #s1:checked ~ #slide1, #s2:checked ~ #slide2,
-    #s3:checked ~ #slide3, #s4:checked ~ #slide4,
-    #s5:checked ~ #slide5 {
-        box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
-        transform: translate3d(0,0,0);
-    }
-
-    #s1:checked ~ #slide2, #s2:checked ~ #slide3,
-    #s3:checked ~ #slide4, #s4:checked ~ #slide5,
-    #s5:checked ~ #slide1 {
-        box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-        transform: translate3d(15%,0,-100px);
-    }
-
-    #s1:checked ~ #slide3, #s2:checked ~ #slide4,
-    #s3:checked ~ #slide5, #s4:checked ~ #slide1,
-    #s5:checked ~ #slide2 {
-        box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-        transform: translate3d(30%,0,-200px);
-    }
-</style>
-
 
 
 <br>
-<h1 style="text-align: center;font-size: 42px;font-family: monospace;">What We Offer</h1>
+<h1>What We Offer</h1>
 
 <br><br>
 
@@ -176,9 +115,18 @@
         <img src="images/warrior.png" height="100%" width="100%">
     </label>
 </section>
+    <div class="flexbox-container-a" id="contact">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2>Contact Us</h2>
+                <input type="text" class="field" placeholder="First Name">
+                <input type="text" class="field" placeholder="Last Name">
+                <input type="email" class="field" placeholder="Your Email">
+                <textarea class="field" placeholder="Message"></textarea>
+            </div>
+        </div>
+    </div>
 
-<!-- bootstrap breaks bc =stylesheet, carousel doesn't work in firefox
-bc "add mozilla prefix in animations" or"Replace "transform: translate3d(30%,0,-200px);"  w/ "transform: scale(.75) translate(100%, 0) translateZ(50px);"  and change the settings specifications for each to match.  Scale handles size of image, translate(x, y) handles position, and translateZ handles position in 3D space.
--->
 </body>
 </html>
