@@ -1,4 +1,4 @@
-body {background-color: coral;}
+body {background-color: coral !important;}
 
 .flexbox-container-a {
     display: flex;
@@ -341,4 +341,4 @@ textarea{
     .left{
         height: 200px;
     }
-}}
+}

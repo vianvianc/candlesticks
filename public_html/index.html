@@ -7,6 +7,8 @@
     <script src="script.js" defer></script>
 
     <title>Candlesticks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -100,21 +102,22 @@
     <input type="radio" name="slider" id="s4">
     <input type="radio" name="slider" id="s5">
     <label for="s1" id="slide1">
-        <img src="images/img1.png" height="100%" width="100%">
+        <img src="images/img1.png" height="100%" width="100%" alt="img1">
     </label>
     <label for="s2" id="slide2">
-        <img src="images/img2.png" height="100%" width="100%">
+        <img src="images/img2.png" height="100%" width="100%" alt="img2">
     </label>
     <label for="s3" id="slide3">
-        <img src="images/img3.png" height="100%" width="100%">
+        <img src="images/img3.png" height="100%" width="100%" alt="img3">
     </label>
     <label for="s4" id="slide4">
-        <img src="images/dojima-market.png" height="100%" width="100%">
+        <img src="images/dojima-market.png" height="100%" width="100%" alt="img4">
     </label>
     <label for="s5" id="slide5">
-        <img src="images/warrior.png" height="100%" width="100%">
+        <img src="images/warrior.png" height="100%" width="100%" alt="img5">
     </label>
 </section>
+    <form action= "./apis/" id="contact" method="post" novalidate>
     <div class="container1">
         <div class="contact-box">
             <div class="left"></div>
@@ -124,11 +127,25 @@
                 <input type="text" class="field" placeholder="Last Name">
                 <input type="email" class="field" placeholder="Your Email">
                 <textarea class="field" placeholder="Message"></textarea>
-                <button class="btn"> Send </button>
+                <div class="g-recaptcha" data-sitekey="6LfMmfQfAAAAALfuecuYrDi2raKDLd1TEPI_RiKd"></div>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </div>
     </div>
-    <div class="container1">
+    </form>
+    <div id="output-area"></div>
+
+<!--        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha512-YUkaLm+KJ5lQXDBdqBqk7EVhJAdxRnVdT2vtCzwPHSweCzyMgYV/tgGF4/dCyqtCC2eCphz0lRQgatGVdfR0ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="script.js"></script>
+
 
 
 
