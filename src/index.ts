@@ -54,7 +54,7 @@ const handlePostRequest = (request: Request, response: Response) => {
    // console.log(request.body.name)  //object destructuring
     const mailgunData = {
         to: process.env.MAIL_RECIPIENT,
-        from: `${name} <postmaster@${process.env.MAILGUN_DOMAIN}>`
+        from: `${name} <postmaster@${process.env.MAILGUN_DOMAIN}>`,
         subject: `${email}: ${subject}`,
         text: message
     }
