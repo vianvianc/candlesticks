@@ -14,7 +14,6 @@ require('dotenv').config()
 const validation = [
     check('name', 'A valid name is required.').not().isEmpty().trim().escape(),
     check( 'email', 'Please provide a valid email.').isEmail(),
-    check('subject').optional().trim().escape(),
     check( 'message', 'A message').trim().escape().isLength({min: 1, max: 2000})
 ]
 const app: Application = express()
@@ -50,12 +49,12 @@ const handlePostRequest = (request: Request, response: Response) => {
             `<div class='alert alert-danger' role='alert'><strong>uh-oh</strong> ${currentError.msg}</div>`
         )
     }
-    const {name, email, subject, message} = request.body
+    const {name, email, message} = request.body
    // console.log(request.body.name)  //object destructuring
     const mailgunData = {
         to: process.env.MAIL_RECIPIENT,
         from: `${name} <postmaster@${process.env.MAILGUN_DOMAIN}>`,
-        subject: `${email}: ${subject}`,
+        subject: `${email}:`,
         text: message
     }
     mailgunClient.messages.create(process.env.MAILGUN_DOMAIN, mailgunData)
