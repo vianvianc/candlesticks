@@ -11,8 +11,8 @@ define(["require", "exports", 'Scripts/MindFusion.Charting'], function (require,
 
    stockChart.candlestickWidth = 12;
 
-   stockChart.showLegend = false;
-   stockChart.showXCoordinates = false;
+   stockChart.showLegend = true;
+   stockChart.showXCoordinates = true;
    stockChart.xAxis.minValue = 0;
    stockChart.xAxis.interval = 1;
    stockChart.xAxis.maxValue = 40;
